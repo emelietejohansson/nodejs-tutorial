@@ -10,4 +10,8 @@ app.get('/contact', function(req, res){
     res.send('This is the contact page :)');
 });
 
+app.get('/profile/:name', function(req, res){
+    res.send('You requested a profile with the name of ' + req.params.name);
+});
+
 app.listen(3000);
